@@ -1,43 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-     <meta charset="utf-8">
-     <link rel="stylesheet" href="index.css">
-</head>
-<header>
-    <div class="heaader"></div>
-    <img src="img/Foto tamaño carnet KSSV.jpg" class="header__foto" width="100">
-    <div class="header__datos"></div>
-    <h1 class="header__datos--nombre">Kevin Saltos</h1>
-    <h2 class="heder__datos--profesion">Programador Starter</h2>
-    <img src="img/Qr.png" class="qr" width="150">
-    <p class="heder__datos--contactos">KevnSaltos@hotmail.com <br>
-         (+593) 0984968737</p>
-    <p class="header__datos--p">Estudiante de Desarrollo de Software en Yavirac <br>
-         Dedico mi día a mejorar como programador y aprender inglés</p>
-</header>
+  <body>
+    <div class="general-contenedor">
+      <div class="perfil-tarjeta">
+        <img class="perfil-tarjeta__img" src="img/foto.jpg" alt="foto"/>
 
-<body>
-    <div class="habilidades">
-         <div class="habilidades__js">
-             <h6>JavaScript</h6>
-             <input type="button" width="100">
-         </div>
+        <div class="profile-card__info">
+          <div class="perfil-tarjeta__dato">
+            <div class="perfil-tarjeta__perfil">
+              <p class="perfil-tarjeta__nombre">Kevin Saltos</p>
+              <a class="perfil-tarjeta__profecion">Starter Developer</a>
+            </div>
 
-         <div class="habilidades__css">
-             <h6>Css</h6>
-             <div class="habilidades__css--barra">
-                 <span class="habilidades__css--barraCss" style="width: 20%"></span>
-             </div>
-         </div>
- 
-         <div class="habilidades__html">
-             <h6>Html</h6>
-             <div class="habilidades__html--barra">
-                 <span class="habilidades__html--barraHtml" style="width: 20%"></span>
-             </div>
-         </div>
-     </div>
+            <div class="perfil-tarjeta__contacto">
+             <p class="perfil-tarjeta__email">
+                <i class="profile-card__email-icon fas fa-envelope"></i
+                >KevnSaltos@hotmail.com
+             </p>
 
-</body>
+              <p class="perfil-tarjeta__telefono-numero">
+                <i class="profile-card__phone-number-icon fas fa-phone-square-alt"></i>
+                (+593) 0984 968 737
+              </p>
+            </div>
+          </div>
+
+          <div class="perfil-tarjeta__descripcion"><br>
+            <p>
+              I am studying Software Development in Yavirac, I use my time studying Software, 
+              English, stay with good healthy, and hobbies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="habilidad-tarjeta">
+        <h2 class="habilidad-tarjeta__titulo">FRONT END</h2>
+
+        <div class="habilidad-tarjeta__contenedor">
+          <div class="habilidad-tarjeta__habilidad habilidad-tarjeta__habilidad--1">
+            <p class="habilidad-tarjeta__lenguaje1">HTML</p>
+            <div class="habilidad-tarjeta__escala">
+              <div class="habilidad-tarjeta__porcentaje habilidad-tarjeta__porcentaje--1"></div>
+            </div>
+          </div>
+
+          <div class="habilidad-tarjeta__habilidad habilidad-tarjeta__habilidad--2">
+            <p class="habilidad-tarjeta__lenguaje2">JavaScript</p>
+            <div class="habilidad-tarjeta__escala">
+              <div class="habilidad-tarjeta__porcentaje habilidad-tarjeta__porcentaje--2"></div>
+            </div>
+          </div>
+
+          <div class="habilidad-tarjeta__habilidad habilidad-tarjeta__habilidad--3">
+            <p class="habilidad-tarjeta__lenguaje3">CSS</p>
+            <div class="habilidad-tarjeta__escala">
+              <div class="habilidad-tarjeta__porcentaje habilidad-tarjeta__porcentaje--3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articulo-tarjeta">
+        <p class="articulo-tarjeta__blog">Page</p>
+
+        <h2 class="articulo-tarjeta__titulo">Página de Empresa</h2>
+
+        <p class="articulo-tarjeta__descripcion">This page was created like a Semester Proyect.</p>
+        <a
+          class="articulo-tarjeta__link"
+          href=""
+          target="_blank"
+          >Code</a
+        >
+        <img
+          class="articulo-tarjeta__img"
+          src="img/img1.png"
+          alt="articulo-img"
+        />
+      </div>
+      
+      <div class="proyecto-tarjeta proyecto-tarjeta-1">
+        <img class="proyecto-tarjeta__img" src="img/captura.jpeg" alt="proyecto-img"/>
+
+        <div class="proyecto-tarjeta__dato">
+          <div class="proyecto-tarjeta__uso-tec-etiqueta">
+            <p class="proyecto-tarjeta__etiqueta">#HTML</p>
+            <p class="proyecto-tarjeta__etiqueta">#CSS</p>
+          </div>
+
+          <div class="proyecto-tarjeta__info">
+            <h2 class="proyecto-tarjeta__titulo">Cards</h2>
+            <p class="proyecto-tarjeta__descripcion">
+                I created this cards like a work project.
+            </p>
+          </div>
+
+          <div class="proyecto-tarjeta__boton ">
+            <a
+              class="proyecto-tarjeta__boton  proyecto-tarjeta__boton--ver"
+              href="#"
+              target="_blank"
+              >Watch</a
+            >
+
+            <a
+              class="proyecto-tarjeta__boton  proyecto-tarjeta__boton--codigo"
+              href=""
+              target="_blank"
+              >Code</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="hobbies-tarjeta">
+        <h2 class="hobbies-tarjeta__titulo">Hobbies</h2>
+        <div class="hobbies-tarjeta__contenedor">
+          <div class="hobbies-tarjeta__hobbie">
+            <img
+              class="hobbies-tarjeta__img"
+              src="img/img3.png"
+              alt="hobbie-img"
+            />
+            <h3 class="hobbies-tarjeta__hobbie-nombre">Gaming</h3>
+            <p class="hobbies-tarjeta__descipcion">
+              I like to play League of legends and Hollow Knight.
+            </p>
+          </div>
+          <div class="hobbies-tarjeta__hobbie">
+            <img
+              class="hobbies-tarjeta__img"
+              src="img/img4.jpg"
+              alt="hobbie-img"
+            />
+            <h3 class="hobbies-tarjeta__hobbie-nombre">Walk</h3>
+            <p class="hobbies-tarjeta__descipcion">
+              I walked with my dogs in the forest and the city.
+            </p>
+          </div>
+          <div class="hobbies-tarjeta__hobbie">
+            <img
+              class="hobbies-tarjeta__img"
+              src="img/img5.jpg"
+              alt="hobbie-img"
+            />
+            <h3 class="hobbies-tarjeta__hobbie-nombre">Read Books</h3>
+            <p class="hobbies-tarjeta__descipcion">
+              I love books of Epic Fantasy like "A Song of Ice and Fire" or Tolkien's books.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pagina-barra-1">
+        <a class="pagina-barra-1__btn" href=""
+          ><i class="fas fa-chevron-left"></i
+        ></a>
+        <a class="pagina-barra-1__btn" href="">1</a>
+        <a class="pagina-barra-1__btn" href="">2</a>
+        <a class="pagina-barra-1__btn" href="">3</a>
+        <div>...</div>
+        <a class="pagina-barra-1__btn" href="">10</a>
+        <a class="pagina-barra-1__btn" href=""
+          ><i class="fas fa-chevron-right"></i
+        ></a>
+      </div>
+
+    </div>
+
+  </body>
+</html>
