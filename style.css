@@ -193,7 +193,7 @@ body {
   
   .proyecto-tarjeta {
     display: block;
-    width: 90%; height: 60vh;
+    width: 90%; height: 1000%;
     background: white;
   }
   
@@ -215,7 +215,7 @@ body {
     height: 25vh;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 1vh 2vh;
+    margin: 0 0 0 2vh;
   }
   
   .proyecto-tarjeta__uso-tec-etiqueta {
@@ -432,9 +432,9 @@ body {
     
     .proyecto-tarjeta__dato {
       display: flex;
-      height: 270px;
+      height: 220px;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     
     .proyecto-tarjeta__uso-tec-etiqueta {
@@ -489,7 +489,6 @@ body {
       border: 1px solid rgb(25, 3, 228);
     }
     
-    /* Seccion de Habilidades % */
     .habilidad-tarjeta {
       grid-area: habilidad-tarjeta;
       width: 80%; height: 80%;
@@ -560,7 +559,7 @@ body {
       border-radius: inherit;
     }
     
-    /* esta parte me ayuda a cambiar el porcetaje de las barras azules */
+    /* cambiar el porcetaje de las barras azules */
     .habilidad-tarjeta__porcentaje--1 {
       width: 50%;
     }
@@ -679,7 +678,7 @@ body {
       margin: 7px 0 0;
     }
         
-    /* Barra de numeros de la inferior */
+    /* Barra de numeros */
     
     .pagina-barra-1 {
       display: flex;
